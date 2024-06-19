@@ -1,42 +1,89 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Maintenance mode</title>
+    <meta name="keywords" content="Maintenance Mode" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index, follow" />
+    <style>
+      .maintenance__container {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin: 5% 0 0 0;
+        padding: 0;
+        background-color: rgb(248, 248, 248);
+        font-family: Arial, Helvetica, sans-serif;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -ms-flex-align: center;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
 
-<head>
-  <title>Maintenance mode</title>
-  <meta name="keywords" content="Maintenance Mode" />
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="robots" content="index, follow" />
-  <style>
-    body {
-        color: #1b1f23;
-        font-family: sans-serif;
-    }
-    .wrap {
+      .maintenance__image {
+        background-image: url(https://dl.dropboxusercontent.com/s/9xyenoh1ztvt0v3/construction-simple.svg?dl=0);
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
         width: 600px;
-        margin: 200px auto 0;
-        text-align: center;
-    }
-    .wrap h1 {
-        font-size: 30px;
-        font-weight: 700;
-        margin: 0 0 90px;
-    }
-    .wrap h2 {
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 1.6;
-        margin: 0 0 80px;
-    }
-  </style>
-</head>
-<!-- testing -->
-<body>
-  <div class="wrap">
-    <h1>Maintenance mode</h1>
-    <h2><p>Sorry for the inconvenience.<br />Our website is currently undergoing scheduled maintenance.<br /><br /></p></h2>
-    <p>Thank you for your understanding.</p>
-  </div>
-</body>
+        min-height: 300px;
+      }
 
+      .maintenance__title {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 0;
+        text-align: center;
+        width: calc(100% - 10px);
+      }
+
+      .maintenance__message {
+        font-size: 15px;
+        color: rgb(98, 98, 98);
+        text-align: center;
+        width: calc(100% - 50px);
+      }
+
+      .maintenance__footer {
+        font-size: 13px;
+        margin: 50px 0;
+        color: rgb(98, 98, 98);
+      }
+
+      @media only screen and (min-width: 768px) {
+        .maintenance__title {
+          font-size: 24px;
+        }
+
+        .maintenance__message {
+          font-size: 18px;
+          width: calc(100% - 200px);
+        }
+      }
+    </style>
+  </head>
+  <!-- testing -->
+  <body class="maintenance__container">
+    <div class="maintenance__image"></div>
+    <div class="maintenance__title">
+      Temporary Downtime for Scheduled Maintenance
+    </div>
+    <div class="maintenance__message">
+      We are performing scheduled maintenance at the moment. We expect to be
+      back online in a couple of hours. Thank you for your patience and we
+      apologize for any inconveniences caused.
+    </div>
+    <div class="maintenance__footer">Version 1.0.0</div>
+  </body>
 </html>
