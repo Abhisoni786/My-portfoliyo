@@ -1,10 +1,8 @@
 <?php
 
-    $to = "rockybd1995@gmail.com";
+    $to = "abhisoni883@gmail.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
-    $subject = $_REQUEST['subject'];
-    $number = $_REQUEST['number'];
     $cmessage = $_REQUEST['message'];
 
     $headers = "From: $from";
@@ -13,10 +11,10 @@
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "You have a message from your Bitmap Photography.";
+    $subject = "You have a message from your Portfolio website";
 
-    $logo = 'img/logo.png';
-    $link = '#';
+    $logo = '/assets/images/logo.png';
+    $link = 'https://abhishek-soni.netlify.app/';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";
