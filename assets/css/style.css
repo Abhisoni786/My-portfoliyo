@@ -509,6 +509,15 @@ main {
   line-height: 1.6;
 }
 
+.about-text span {
+  display: inline;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+
+}
+
 .about-text p { margin-bottom: 15px; }
 
 

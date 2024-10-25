@@ -189,3 +189,25 @@ function downloadResume() {
 
 //   });
 // }
+
+
+function calculateDateDifference() {
+  const startDate = new Date('2022-01-24');
+  const currentDate = new Date();
+
+  // Calculate the difference in years
+  let yearsDiff = currentDate.getFullYear() - startDate.getFullYear();
+
+  // Calculate the difference in months
+  let monthsDiff = currentDate.getMonth() - startDate.getMonth();
+
+  // Adjust years and months if the month difference is negative
+  if (monthsDiff < 0) {
+      yearsDiff -= 1;
+      monthsDiff += 12;
+  }
+
+  // Display result in "2.10" or "2.11" format based on current date
+  document.getElementById('experience').innerHTML = `${yearsDiff}.${monthsDiff}`;
+}
+calculateDateDifference();
