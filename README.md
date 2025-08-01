@@ -34,11 +34,8 @@ Windows:
 ```bash
 git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
 ```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
+## Netlify Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/abb10f25-5376-4e7b-b28b-0c7b479f901d/deploy-status)](https://app.netlify.com/projects/abhishek-soni/deploys)
 ## License
 
 MIT
